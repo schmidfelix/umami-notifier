@@ -2,7 +2,7 @@
 
 # Umami Notifier
 
-Inspired by [BeyondCode's fathom-notifier](https://github.com/beyondcode/fathom-notifier), a stand-alone CLI app to get
+Inspired by [BeyondCode's fathom-notifier](https://github.com/beyondcode/fathom-notifier), `umami-notifier` is a stand-alone CLI app to get
 your [umami analytics insights](https://umami.is/) directly to your slack inbox.
 
 # Documentation
