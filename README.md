@@ -9,7 +9,7 @@ your [umami analytics insights](https://umami.is/) directly to your slack inbox.
 
 ## Installation
 
-To install the umami-notifier, simply pull the repository from GitHub and install the composer dependencies:
+To install the umami-notifier, simply pull the repository from GitHub and install its composer dependencies:
 
 ```shell
 git clone git@github.com:schmidfelix/umami-notifier.git
@@ -21,7 +21,7 @@ That's it. You've successfully installed the notifier.
 
 ## Configuration
 
-Next you have to tell the application where you're umami server lives and how to connect to it.
+Next you have to tell the application where your umami server lives and how to connect to it.
 
 To do so, copy the `.env.example` file to `.env` and fill out all the settings:
 
@@ -29,7 +29,7 @@ To do so, copy the `.env.example` file to `.env` and fill out all the settings:
 UMAMI_URL= # API endpoint for your umami instance. E.g.: https://umami.mysite.com/api
 UMAMI_USER= # Your umami login username
 UMAMI_PASSWORD= # You umami login password
-TIMERANGE=weeks # The timeframe the analytics should be fetched in. E.g.: week to fetch the data from the last week, day to get all data for the current day 
+INTERVAL=weeks # The interval the analytics should be fetched in. E.g.: 'week' to fetch the data from the last week, 'day' to get all data for the current day 
 ```
 
 ## Managing sites
@@ -46,11 +46,11 @@ php umami sites:add
 
 The app will ask you for the site id on your umami instance, a display name and a url for the incoming slack webhook.
 
-> You have to create a [incoming webhook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) to your Slack account.
+> You have to add an [incoming webhook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) to your Slack account.
 
 ### Removing a site
 
-To stop notifying you about a sites statistics simply run
+To stop notifying you about a site's statistics simply run
 
 ```shell
 php umami sites:delete {site}
@@ -71,7 +71,7 @@ which is used to notify you.
 
 ## Notifying the sites statistics
 
-To notify all the sites statistics simply run
+To notify all the site's statistics simply run
 
 ```shell
 php umami sites:notify

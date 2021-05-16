@@ -30,7 +30,7 @@ class StatisticsResultNotification extends Notification
 
     public function toSlack($notifiable)
     {
-        $range = config('umami.timerange');
+        $range = config('umami.interval');
 
         $growth = $this->getGrowth();
         $notification = "This {$range}, *{$this->site->name}* had *{$this->statistics->pageviews}* users.\n";
@@ -68,6 +68,8 @@ class StatisticsResultNotification extends Notification
     {
         $previousUsers = $this->comparisonStatistics->pageviews;
 
-        return (100 - ($this->statistics->pageviews / $previousUsers * 100)) * -1;
+        return $previousUsers === 0
+            ? 100
+            : (100 - ($this->statistics->pageviews / $previousUsers * 100)) * -1;
     }
 }

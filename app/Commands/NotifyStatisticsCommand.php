@@ -39,11 +39,11 @@ class NotifyStatisticsCommand extends Command
             ->each(function ($site) use ($client) {
                 $this->line('Notifying ' . $site->name);
 
-                $startDate = now()->addDay()->sub(config('umami.timerange'), 1)->startOfDay();
-                $endDate = $startDate->clone()->add(config('umami.timerange'), 1)->subDay()->endOfDay();
+                $startDate = now()->addDay()->sub(config('umami.interval'), 1)->startOfDay();
+                $endDate = $startDate->clone()->add(config('umami.interval'), 1)->subDay()->endOfDay();
 
-                $comparisonStartDate = now()->addDay()->sub(config('umami.timerange'), 2)->startOfDay();
-                $comparisonEndDate = $comparisonStartDate->clone()->add(config('umami.timerange'), 1)->subDay()->endOfDay();
+                $comparisonStartDate = now()->addDay()->sub(config('umami.interval'), 2)->startOfDay();
+                $comparisonEndDate = $comparisonStartDate->clone()->add(config('umami.interval'), 1)->subDay()->endOfDay();
 
                 $data = $client->getStats(
                     id: $site->umami_id,
