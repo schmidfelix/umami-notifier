@@ -1,4 +1,4 @@
-![](https://banners.beyondco.de/Umami%20Notifier.png?theme=light&packageManager=composer+require&packageName=schmidfelix%2Fumami-notifier&pattern=bankNote&style=style_1&description=Get+your+umami+insights+directly+to+your+slack+inbox.&md=1&showWatermark=0&fontSize=100px&images=paper-airplane)
+![](https://banners.beyondco.de/Umami%20Notifier.png?theme=light&packageManager=&packageName=&pattern=bankNote&style=style_1&description=Get+your+site%27s+statistics+directly+to+your+slack+inbox&md=1&showWatermark=0&fontSize=100px&images=paper-airplane)
 
 # Umami Notifier
 
