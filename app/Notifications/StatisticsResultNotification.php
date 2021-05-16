@@ -70,5 +70,4 @@ class StatisticsResultNotification extends Notification
 
         return (100 - ($this->statistics->pageviews / $previousUsers * 100)) * -1;
     }
-
 }

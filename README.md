@@ -1,36 +1,22 @@
-<p align="center">
-    <img title="Laravel Zero" height="100" src="https://raw.githubusercontent.com/laravel-zero/docs/master/images/logo/laravel-zero-readme.png" />
-</p>
+![](https://banners.beyondco.de/Umami%20Notifier.png?theme=light&packageManager=composer+require&packageName=schmidfelix%2Fumami-notifier&pattern=bankNote&style=style_1&description=Get+your+umami+insights+directly+to+your+slack+inbox.&md=1&showWatermark=0&fontSize=100px&images=paper-airplane)
 
-<p align="center">
-  <a href="https://github.com/laravel-zero/framework/actions"><img src="https://img.shields.io/github/workflow/status/laravel-zero/framework/Tests.svg" alt="Build Status"></img></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/dt/laravel-zero/framework.svg" alt="Total Downloads"></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/v/laravel-zero/framework.svg?label=stable" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/l/laravel-zero/framework.svg" alt="License"></a>
-</p>
+# Umami Notifier
 
-<h4> <center>This is a <bold>community project</bold> and not an official Laravel one </center></h4>
-
-Laravel Zero was created by, and is maintained by [Nuno Maduro](https://github.com/nunomaduro), and is a micro-framework that provides an elegant starting point for your console application. It is an **unofficial** and customized version of Laravel optimized for building command-line applications.
-
-- Built on top of the [Laravel](https://laravel.com) components.
-- Optional installation of Laravel [Eloquent](https://laravel-zero.com/docs/database/), Laravel [Logging](https://laravel-zero.com/docs/logging/) and many others.
-- Supports interactive [menus](https://laravel-zero.com/docs/build-interactive-menus/) and [desktop notifications](https://laravel-zero.com/docs/send-desktop-notifications/) on Linux, Windows & MacOS.
-- Ships with a [Scheduler](https://laravel-zero.com/docs/task-scheduling/) and  a [Standalone Compiler](https://laravel-zero.com/docs/build-a-standalone-application/).
-- Integration with [Collision](https://github.com/nunomaduro/collision) - Beautiful error reporting
-
-------
+Inspired by [BeyondCode's fathom-notifier](https://github.com/beyondcode/fathom-notifier), a stand-alone CLI app to
+get your [umami analytics insights](https://umami.is/) directly to your slack inbox.
 
 ## Documentation
 
-For full documentation, visit [laravel-zero.com](https://laravel-zero.com/).
+You can find the full documentation at it's [official documentation](https://felix-schmid.de/docs/umami-notifier).
 
-## Support the development
-**Do you like this project? Support it by donating**
+### Security
+If you discover any security related issues, please email hey@felix-schmid.de instead of using the issue tracker.
 
-- PayPal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L)
-- Patreon: [Donate](https://www.patreon.com/nunomaduro)
+## Credits
+
+- [Felix Schmid](https://github.com/schmidfelix)
+- [All Contributors](../../contributors)
 
 ## License
 
-Laravel Zero is an open-source software licensed under the MIT license.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
